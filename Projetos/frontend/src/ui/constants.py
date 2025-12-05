@@ -1,6 +1,6 @@
 # src/ui/constants.py
 
-API_URL = "https://spatial-analysis-algorithms-1.onrender.com/"
+API_URL = "https://spatial-analysis-algorithms-1.onrender.com"
 #https://spatial-analysis-algorithms-1.onrender.com/ 
 #http://127.0.0.1:8000
 
