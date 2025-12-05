@@ -7,6 +7,7 @@ uvicorn[standard]
 # Manipulação de Dados
 pandas
 geopandas
+mapclassify
 
 # Acesso a Fontes de Dados Externas
 pysus
