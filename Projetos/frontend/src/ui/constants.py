@@ -1,6 +1,8 @@
 # src/ui/constants.py
 
-API_URL = "http://127.0.0.1:8000" 
+API_URL = "https://spatial-analysis-algorithms-1.onrender.com/"
+#https://spatial-analysis-algorithms-1.onrender.com/ 
+#http://127.0.0.1:8000
 
 METRIC_OPTIONS = {
     "Birth Rate (per 1,000 Inh.)": "birth_rate_per_1000",
