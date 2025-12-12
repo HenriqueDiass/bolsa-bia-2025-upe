@@ -60,7 +60,7 @@ def display_sinasc_query_section():
                 key="sinasc_global_group"
             )
             group_code = group_codes[selected_group_label]
-            st.text_input("Group Code", value=group_code, disabled=True)
+            #st.text_input("Group Code", value=group_code, disabled=True)
             
         with col_global_2:
             global_year = st.number_input(
@@ -127,8 +127,9 @@ def display_sinasc_query_section():
                     st.dataframe(pd.DataFrame(rows_to_display), use_container_width=True)
                     
                     if columns_list: 
-                        with st.expander(f"Show raw columns"):
-                            st.write(columns_list)
+                        with st.expander(f"Show {len(columns_list)} available data columns"):
+                            columns_list = pd.DataFrame(columns_list, columns=["Column Name"])
+                            st.dataframe(columns_list, use_container_width=True, hide_index=True)
                 
                 elif not summary_dict and data:
                      st.warning("Data received but 'summary' dictionary is empty.")

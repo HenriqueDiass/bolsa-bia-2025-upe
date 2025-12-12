@@ -26,6 +26,9 @@ class FetchDataCnesUseCase:
             if downloaded_dataset is None:
                 return None
             
+
+
+            
             coluna_municipio = 'CODUFMUN' # Exemplo para o grupo 'ST' (Estabelecimentos)
             dataframe = downloaded_dataset.to_dataframe(columns=[coluna_municipio])
             

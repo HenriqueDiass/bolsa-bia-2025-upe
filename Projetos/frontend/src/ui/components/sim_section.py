@@ -37,7 +37,7 @@ def display_sim_query_section():
             )
             
             selected_group_code = group_code_dict[selected_group_label]
-            st.text_input("Group Code", value=selected_group_code, disabled=True)
+            #st.text_input("Group Code", value=selected_group_code, disabled=True)
             
         with col_form_2:
             single_year = st.number_input(

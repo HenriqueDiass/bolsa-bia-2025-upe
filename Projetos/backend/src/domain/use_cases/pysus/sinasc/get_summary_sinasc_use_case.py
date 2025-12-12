@@ -12,7 +12,6 @@ class GetSummarySinascUseCase:
     
     def execute(self, group_code: str, years: List[int], states: Optional[List[str]] = None) -> Dict[str, Any]:
         
-        # 1. Inicializa a variável do cabeçalho
         column_names: Optional[List[str]] = None 
         
         try:
@@ -21,12 +20,10 @@ class GetSummarySinascUseCase:
             files_to_download = sinasc_db.get_files(group=group_code, year=years, uf=states)
 
             if not files_to_download:
-                # 2. Atualiza o retorno para o novo formato
                 return {"summary": {}, "columns": []} 
             
             downloaded_objects = sinasc_db.download(files_to_download)
             if not downloaded_objects:
-                # 2. Atualiza o retorno para o novo formato
                 return {"summary": {}, "columns": []} 
 
             if isinstance(downloaded_objects, list):

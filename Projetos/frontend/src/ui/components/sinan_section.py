@@ -52,7 +52,7 @@ def display_sinan_query_section():
                 key="sinan_global_disease"
             )
             disease_code = disease_codes[selected_disease_label]
-            st.text_input("Disease Code", value=disease_code, disabled=True)
+            #st.text_input("Disease Code", value=disease_code, disabled=True)
             
         with col_global_2:
             global_year = st.number_input(
